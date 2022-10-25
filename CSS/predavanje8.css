@@ -1,0 +1,94 @@
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  body{
+    background-color: bisque;
+  }
+  
+  header{
+    height: 15vh;
+    background-color: aquamarine;
+  }
+  
+  main{
+    min-height: 70vh;
+  }
+  
+  footer{
+    height: 15vh;
+    background-color: aquamarine;
+  }
+  
+  h1{
+    color: brown;
+  }
+  
+  h2{
+    color: rgba(211, 14, 30, 0.5);
+  }
+  
+  h1, h2{
+    text-align: center;
+  }
+  
+  h1{
+    color: purple;
+  }
+  
+  li{
+    display: inline-block;
+    padding: 10px;
+  }
+  
+  b{
+    display: inline-block;
+    width:100%;
+    padding: 15px;
+    border: 5px solid black;
+  }
+  
+  [href]{
+    font-style: italic;
+  }
+  
+  [href="#osimi"]{
+    font-size: 24px;
+  }
+  
+  /* sadrzi rjec */
+  [hhh~=vodi]{
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  /* pocinje sa rjeci popracenom - */
+  [class|=header] {
+    background-color: yellow;
+  }
+  
+  /* pocinje sa rjeci */
+  [class^=header] {
+    transform: rotateY(180deg)
+  }
+  
+  [hhh$=dinama]{
+    transform: rotatex(180deg)
+  }
+  
+  [hhh*="iv-di"]
+  {
+    font-weight: 900;
+  }
+  
+  b[id$="ma"]{
+    color:blue;
+  }
+  
+  section.pavi{
+    text-decoration: underline;
+  }
