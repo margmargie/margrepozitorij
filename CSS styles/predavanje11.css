@@ -1,0 +1,59 @@
+.relativno{
+    background-color: aqua;
+    position: relative;
+    top:100px;
+    left:200px;
+  }
+  
+  .apsolutni1, .apsolutni2{
+    position: absolute;
+    top:200px;
+    left:200px;
+  }
+  
+  .apsolutni1{
+    background-color: chocolate;
+  }
+  .apsolutni2{
+    background-color: rgb(169, 28, 176);
+  }
+  
+  .fiksni{
+    background-color: bisque;
+    position: fixed;
+    right:0px;
+    bottom:100px;
+  }
+  .sticky{
+    background-color: rgb(239, 135, 8);
+    position: sticky;
+    bottom:50px;
+  }
+  
+  .flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+  }
+  
+  .flex-container > div {
+    width:100%;
+  }
+  
+  .flex-container > div:first-of-type {
+    width:50%;
+    background-color: bisque;
+  }
+  
+  .inline-flex-container{
+    display: inline-flex;
+  }
+  .flex-container1{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+  .obojan{
+    width:10%;
+    background-color: blue;
+  }

@@ -1,0 +1,145 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  .container5{
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: aqua;
+    margin:20px;
+  }
+  
+  .container5 > div {
+    background-color: coral;
+    flex-basis: 20%;
+  }
+  
+  .container5 > div:nth-child(1) {
+    flex-basis: 15%;
+  }
+  .container5 > div:nth-child(2) {
+    flex-basis: 15%;
+    flex-shrink: 3;
+  }
+  .container5 > div:nth-child(3) {
+    flex-basis: 20%;
+    flex-grow: 8;
+  }
+  .container5 > div:nth-child(4) {
+    flex-basis: 40%;
+  }
+  .container5 > div:nth-child(5) {
+    flex-basis: 50%;
+    flex: 2 0;
+  }
+  
+  .container4{
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: aqua;
+    margin:20px;
+    gap:20px
+  }
+  
+  .container4 > div {
+    background-color: coral;
+    flex-basis: 30%;
+  }
+  
+  .container4 > div:nth-child(5) {
+    flex-shrink: 5;
+  }
+  
+  .container3{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: aqua;
+    margin:20px;
+    gap:20px
+  }
+  
+  .container3 > div {
+    background-color: coral;
+    flex-basis: 30%;
+  }
+  
+  .container3 > div:nth-child(5){
+    order:-1;
+    flex-grow:1;
+  }
+  
+  .container3 > div:nth-child(2){
+    order:1;
+    flex-grow:1;
+  }
+  
+  .container1{
+    display: flex;
+    height:200px;
+    flex-flow: row wrap;
+    background-color: aqua;
+    margin:20px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .container1 > div {
+    background-color: coral;
+    flex-basis: 40%;
+  }
+  
+  .container1 > div:nth-child(2) {
+    align-self: flex-end;
+  }
+  
+  .container2{
+    display: flex;
+    flex-flow: column wrap;
+    background-color: aqua;
+    margin:20px;
+    height:300px;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  .container2 > div {
+    background-color: coral;
+    flex-basis: 30%;
+  }
+  .wraper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    row-gap: 20px;
+    margin:20px;
+  }
+  main{
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis:72%;
+    justify-content: space-between;
+    height: 70vh;
+    row-gap: 20px;
+    column-gap:10px;
+  }
+  header{
+    flex-basis: 100%;
+    height: 20vh;
+    background-color: aquamarine;
+  }
+  section{
+    flex-basis: 25%;
+    height: 70vh;
+    background-color: rgb(53, 237, 175);
+  }
+  article:first-of-type{
+    flex-basis: 100%;
+    background-color: rgb(127, 70, 181);
+  }
+  article{
+    flex-basis: 45%;
+    background-color: rgb(131, 89, 171);
+    flex-grow: 1;
+  }

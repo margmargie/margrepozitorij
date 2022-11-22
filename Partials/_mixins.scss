@@ -1,0 +1,24 @@
+@mixin boxCommon($color) {
+    padding: 8%;
+    position: relative;
+    top: -70vh;
+    flex-basis: 25%;
+    flex-shrink: 1;
+    flex-grow: 0;
+    font-size: 7vw;
+    color: white;
+    border: 2px solid white;
+    background-color: rgba($color,0.4);
+    text-align: center;
+  }
+  
+  @mixin animate($name, $delay){
+    animation: $name 2s ease-in #{$delay}s forwards;
+  }
+  
+  
+  @mixin keyframes($name){
+    @keyframes #{$name} {
+      @content
+    }
+  }

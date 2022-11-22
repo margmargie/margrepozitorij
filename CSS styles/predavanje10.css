@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../multimedia/antunsPicture.jpg');
+    margin: 0px;
+}
+p{
+    color: red !important;
+}
+a#link1{
+    background-color: rgb(193, 17, 17);
+}
+
+#link1{
+    background-color: black;
+}
+
+a:first-of-type{
+    color:green;
+    background-color: rgb(177, 15, 15);
+}
+
+[href]{
+    color: beige;
+}
+a.link1{
+    background-color: blue !important;
+    color: rgb(185, 207, 20);
+}
+
+a{
+    background-color: aqua;
+    color: brown;
+}
+
+body > a{
+    background-color: rgb(38, 125, 130);
+}
+div{
+    background-color: cornflowerblue;
+    padding: 10px 30px 60px 90px;
+    margin-right: 100px;
+    margin: 10px 20px;
+}

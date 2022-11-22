@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background-color: beige;
+  }
+  
+  .wrapper{
+    display: grid;
+    grid-template-columns: 1fr 30% 30% 1fr;
+  }
+  
+  header, .outer, footer{
+    grid-column: 1 / 5;
+  }
+  
+  .inner{
+    grid-column: 2/4;
+    background-color: white;
+  }
+  
+  header{
+    grid-row: 1 / 2;
+    background-color: darkturquoise;
+  }
+  
+  .sesti{
+    grid-row: 7/8;
+    background-color: darkgoldenrod;
+  }
+  
+  .sesti > div{
+    background-color: white;
+    width:50%;
+    margin:10px auto;
+  }
+  
+  .sedmi > div{
+    background-color: white;
+    width:60%;
+    height:120px;
+    margin:10px auto;
+  }
+  
+  .left{
+    grid-column: 1/3;
+    background-color: rgb(200, 153, 34);
+  }
+  
+  .right{
+    grid-column: 3/5;
+    background-color: darkgoldenrod;
+  }
+  
+  .sedmi{
+    grid-row: 8/9;
+  }
+  
+  footer{
+    grid-row: 9/10;
+    background-color: darkturquoise;
+  }
+  
+  .prvi{
+    grid-row: 2 / 3;
+    display: inline-block;
+    width:20%;
+    justify-self: center;
+  }
+  
+  .drugi{
+    grid-row: 3 / 4;
+    background-color: darkgreen;
+    height: 180px;
+  }
+  
+  .treci{
+    grid-row: 4 / 5;
+  }
+  
+  .treci > div:nth-of-type(1){
+    background-color: darkgrey;
+    width:50%;
+    margin:10px auto;
+  }
+  .treci > div:nth-of-type(2){
+    background-color: darkgrey;
+    display: inline-block;
+    width:40%;
+    height:140px;
+    margin:10px;
+  }
+  .treci > div:nth-of-type(3){
+    background-color: darkgrey;
+    display: inline-block;
+    width:40%;
+    height:140px;
+    margin:10px;
+    
+  }
+  
+  .cetvrti{
+    grid-row: 5 / 6;
+    background-color: darkmagenta;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+  }
+  
+  .peti > div:nth-of-type(1){
+    background-color: darkgrey;
+    width:50%;
+    margin:10px auto;
+  }
+  .peti > div:nth-of-type(2){
+    background-color: darkgrey;
+    width:70%;
+    height:140px;
+    margin:10px auto;
+  }
+  
+  .cetvrti > div{
+    flex-basis: 25%;
+    background-color: white;
+    height:140px;
+  }
+  
+  .peti{
+    grid-row: 6 / 7;
+  }
+  
+  .prvi > div{
+    background-color: darkgrey;
+    border-radius: 10%;
+  }
+  
+  .mala-kocka{
+    width: 50%;
+    height: 50px;
+    margin: 10px auto;
+  }
+  
+  .dugi-pravokutnik{
+    height: 20px;
+    margin: 10px;
+  }

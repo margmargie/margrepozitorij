@@ -1,0 +1,34 @@
+@use 'partials17/_mixins';
+@use 'partials17/_base';
+
+main{
+  width: 100vw;
+  height:100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url('https://v1.padlet.pics/1/image.webp?t=c_limit%2Cdpr_1%2Ch_859%2Cw_1528&url=https%3A%2F%2Fpadlet-uploads.storage.googleapis.com%2F891001168%2Fe79960e75be653e107a57de088ea3859%2Fblur_clean.jpg');
+  background-size: cover;
+}
+
+@for $i from 1 through 3 {
+  $delay: calc($i*2 - 1);
+  div:nth-child(#{$i}) {
+    @include mixins.animate(padaj#{$i},$delay)
+  }
+  @include mixins.keyframes(padaj#{$i}){
+    0%
+    {
+      top:-60vh;
+    }
+    100%
+    {
+      top:0px;
+    }
+  }
+}
+
+div{
+  @include mixins.boxCommon($color:blue);
+}
+
